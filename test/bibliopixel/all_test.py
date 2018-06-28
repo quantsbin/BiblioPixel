@@ -14,6 +14,7 @@ BPA_BLACKLIST = [
     'BiblioPixelAnimations.matrix.spectrum',
     'BiblioPixelAnimations.matrix.spectrum.system_eq',
     'BiblioPixelAnimations.receivers.GenericNetworkReceiver',
+    'BiblioPixelAnimations.matrix.opencv_video'
 ]
 
 

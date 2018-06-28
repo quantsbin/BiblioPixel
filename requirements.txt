@@ -4,4 +4,4 @@ flask
 loady
 numpy
 pyserial
-pyyaml
+pyyaml==3.12
