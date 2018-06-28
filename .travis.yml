@@ -30,6 +30,7 @@ deploy:
     local_dir: site
     github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
     on:
+      python: 3.5
       branch: docs # for now
 
 # Don't compile "experimental" branches starting with x-, y-, or z-.
