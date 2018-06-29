@@ -1,0 +1,324 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "Welcome to the BiblioPixel Light Programming System!\n\u00b6\n\n\nBiblioPixel is a free and open-source Python program for real-time animation of\nlights of all types, often strips of LEDS, which allows people to share\nlighting animations they have created.\n\n\nFeatures\n\u00b6\n\n\nBiblioPixel has some snappy features:\n\n\n\n\nIt has drivers for almost every popular LED strip, and many other lights.\n\n\n\n\nAnimations can be put together without any programming...\n\n    ...but it's also easy to write your own animations, drivers and layouts --\n\n    in Python.\n\n\n\n\n\n\nThere's a high-performance WebGL visualizer\n\n\n\n\n\n\n...and you can also make animated GIFs to send to your friends.\n\n    BiblioPixel uses high-performance \n) --\n    arithmetic...\n\n\n\n\n\n\n...but interoperates nicely with plain old Python lists.\n\n    There's event handling which can connect any control to any animation --\n\n    without programming.\n\n\n\n\n\n\n...and much more...\n\n\n\n\n\n\nThis documentation\n\u00b6\n\n\nThe documentation is divided into three parts:\n\n\n\n\nOverview\n\n\nTopic articles\n\n\nReference\n\n\n\n\nThe \nOverview\n contains:\n\n\n\n\nImmediate Gratification\n\n\nBiblioPixel Basics\n\n\nHow To Install BiblioPixel\n\n\nHow to make a Project\n\n\nParts of a Project\n\n\n\n\nhow to install BiblioPixel and then has a high-level\nexplanation of how BiblioPixel works and what goes into a BiblioPixel project.\n\n\nThen it drills down into the specific parts of a Project and how they are put\ntogether.\n\n\nFinally, there's an example of how to put a Project together from scratch.\n\n\nTopic Articles\n are individual articles about specific topics:\n\n\n\n\nTroubleshooting a BiblioPixel project\n\n\nUsing the  command-line program\n\n\nHow to write your own  class\n\n\nHow to use \n\n\nHow to use controls\n\n\n\n\nThe \nReference\n section contains a glossary, and automatically-generated\nAPI documentation.",
+            "title": "Home"
+        },
+        {
+            "location": "/#welcome-to-the-bibliopixel-light-programming-system",
+            "text": "BiblioPixel is a free and open-source Python program for real-time animation of\nlights of all types, often strips of LEDS, which allows people to share\nlighting animations they have created.",
+            "title": "Welcome to the BiblioPixel Light Programming System!"
+        },
+        {
+            "location": "/#features",
+            "text": "BiblioPixel has some snappy features:   It has drivers for almost every popular LED strip, and many other lights.   Animations can be put together without any programming... \n    ...but it's also easy to write your own animations, drivers and layouts -- \n    in Python.    There's a high-performance WebGL visualizer    ...and you can also make animated GIFs to send to your friends. \n    BiblioPixel uses high-performance  ) --\n    arithmetic...    ...but interoperates nicely with plain old Python lists. \n    There's event handling which can connect any control to any animation -- \n    without programming.    ...and much more...",
+            "title": "Features"
+        },
+        {
+            "location": "/#this-documentation",
+            "text": "The documentation is divided into three parts:   Overview  Topic articles  Reference   The  Overview  contains:   Immediate Gratification  BiblioPixel Basics  How To Install BiblioPixel  How to make a Project  Parts of a Project   how to install BiblioPixel and then has a high-level\nexplanation of how BiblioPixel works and what goes into a BiblioPixel project.  Then it drills down into the specific parts of a Project and how they are put\ntogether.  Finally, there's an example of how to put a Project together from scratch.  Topic Articles  are individual articles about specific topics:   Troubleshooting a BiblioPixel project  Using the  command-line program  How to write your own  class  How to use   How to use controls   The  Reference  section contains a glossary, and automatically-generated\nAPI documentation.",
+            "title": "This documentation"
+        },
+        {
+            "location": "/FAQ/",
+            "text": "FAQ\n\u00b6\n\n\nIf questions are asked a lot, they'll go here.",
+            "title": "FAQ"
+        },
+        {
+            "location": "/FAQ/#faq",
+            "text": "If questions are asked a lot, they'll go here.",
+            "title": "FAQ"
+        },
+        {
+            "location": "/about/",
+            "text": "About Bibliopixel\n\u00b6",
+            "title": "About Bibliopixel"
+        },
+        {
+            "location": "/about/#about-bibliopixel",
+            "text": "",
+            "title": "About Bibliopixel"
+        },
+        {
+            "location": "/roadmap/",
+            "text": "Front Page\n* README.md\n\n\nOverview:\n* Immediate-Gratification.md\n* How-To-Install-BiblioPixel.md\n* BiblioPixel-Basics.md\n* How-to-make-a-Project.md\n* Parts-of-a-Project.md\n\n\nTopic Papers:\n* Troubleshooting-biblipixel.md\n* Using-bp.md\n* Using-controls.md\n* Using-numpy.md\n* Writing-an-Animation-class.md\n\n\nReference:\n* Glossary.md\n* bp-Command.md",
+            "title": "Roadmap"
+        },
+        {
+            "location": "/old/Aliases-and-defaults/",
+            "text": "Aliases and Defaults\n\u00b6\n\n\nAll this can amount to a lot of typing, so BiblioPixel gives you some shortcuts.\n\n\nTypename expansion.\n\u00b6\n\n\nIf you are only specifying a \ntypename\n for a component, then you don't have to specify the entire dictionary, just the name of the class.\n\n\nThis means that a project\n\n\n{\"driver\": {\"typename\": \"bibliopixel.drivers.API.LPD8806.LPD8806\"}}\n\n\n\n\n\nis identical to the easier-to-read\n\n\n{\"driver\": \"bibliopixel.drivers.API.LPD8806.LPD8806\"}\n\n\n\n\n\nAliases.\n\u00b6\n\n\nAliases are just shorthand for some common classes.  It lets you write the project\n\n\n{\"driver\": \"bibliopixel.drivers.API.LPD8806.LPD8806\"}\n\n\n\n\n\nas\n\n\n{\"driver\": \"LPD8806\"}\n\n\n\n\n\nYou can find a current list list of the aliases in \nthis file\n.  \n\n\nAliases are case insensitive.\n\n\nCommand-line flags.\n\u00b6\n\n\nThere are three command line flags that are used to fill in missing components in your project file - \n--driver\n, \n--layout\n, and \n--animation\n.\n\n\nYou can either pass in an alias, or for more control, a JSON dictionary, which you will have to quote for your shell:\n\n\nbibliopixel --animation=matrix_test\nbibliopixel --layout='{\"typename\": \"matrix\", \"width\": 12, \"height\": 12}'\n\n\n\n\n\nThe \n--ledtype\n command line flag.\n\u00b6\n\n\nThe [[SPI]] and [[Serial]] drivers require an \n\"ledtype\"\n field to identify the hardware type of the LED - see \nLED Types\n.  You can use the \n--ledtype\n flag to enter this value from the command line as either a string or an integer.",
+            "title": "Aliases and Defaults"
+        },
+        {
+            "location": "/old/Aliases-and-defaults/#aliases-and-defaults",
+            "text": "All this can amount to a lot of typing, so BiblioPixel gives you some shortcuts.",
+            "title": "Aliases and Defaults"
+        },
+        {
+            "location": "/old/Aliases-and-defaults/#typename-expansion",
+            "text": "If you are only specifying a  typename  for a component, then you don't have to specify the entire dictionary, just the name of the class.  This means that a project  {\"driver\": {\"typename\": \"bibliopixel.drivers.API.LPD8806.LPD8806\"}}  is identical to the easier-to-read  {\"driver\": \"bibliopixel.drivers.API.LPD8806.LPD8806\"}",
+            "title": "Typename expansion."
+        },
+        {
+            "location": "/old/Aliases-and-defaults/#aliases",
+            "text": "Aliases are just shorthand for some common classes.  It lets you write the project  {\"driver\": \"bibliopixel.drivers.API.LPD8806.LPD8806\"}  as  {\"driver\": \"LPD8806\"}  You can find a current list list of the aliases in  this file .    Aliases are case insensitive.",
+            "title": "Aliases."
+        },
+        {
+            "location": "/old/Aliases-and-defaults/#command-line-flags",
+            "text": "There are three command line flags that are used to fill in missing components in your project file -  --driver ,  --layout , and  --animation .  You can either pass in an alias, or for more control, a JSON dictionary, which you will have to quote for your shell:  bibliopixel --animation=matrix_test\nbibliopixel --layout='{\"typename\": \"matrix\", \"width\": 12, \"height\": 12}'",
+            "title": "Command-line flags."
+        },
+        {
+            "location": "/old/Aliases-and-defaults/#the-ledtype-command-line-flag",
+            "text": "The [[SPI]] and [[Serial]] drivers require an  \"ledtype\"  field to identify the hardware type of the LED - see  LED Types .  You can use the  --ledtype  flag to enter this value from the command line as either a string or an integer.",
+            "title": "The --ledtype command line flag."
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/",
+            "text": "BiblioPixel Basics\n\u00b6\n\n\nWhat is BiblioPixel\n\u00b6\n\n\nIn the BiblioPixel Light Programming System, Python command line program named\n\nbp\n runs a JSON document called a \nProject\n which contains information about\nyour lighting hardware, how your lights are laid out, and how you want to\nanimate them - as well as a really nice lighting simulator.\n\n\nLet's go through what all of this means.\n\n\nJSON\n\u00b6\n\n\nJSON is a simple and very popular way to represent structured data in\nhuman-readable and editable text.\n\n\nHere's\n\na nice little introduction to JSON, and \nhere's\n the full\nspecification of the format, which isn't very long at all.\n\n\nThe lighting simulator: SimPixel\n\u00b6\n\n\nBiblioPixel has a sibling project, SimPixel, which lets you preview your\nlighting animations in any modern browser.  This is extremely convenient as it\nallows you develop and test animations in your browser and then deploy them to\nyour hardware installation when you know they are ready.\n\n\nThe command line\n\u00b6\n\n\nBiblioPixel does not have a graphical user interface - it is a command line\nprogram where you type commands at the command line in a terminal.\n\n\nOn Linux or MacOS, you need to run a program called Terminal comes with the\ncomputer.  On Windows, it's [TBD].\n\n\nIn the documentation, terminal commands will be shown like this:\n\n\n$ bp color\nred: (255, 0, 0)\n\n\n\n\nEverything after a \n$\n means something you type in.   In the above example,\nyou typed \nbp color\n and the program responded \nred: (255, 0, 0)\n.\n\n\nThe \nbp\n program\n\u00b6\n\n\nThe \nbp\n program's full name is \"the BiblioPixel Project runner\".  It is\nautomatically installed when you install \nBiblioPixel\n.  \nbp\n has all sorts\nof \ncommands\n, with names like \nrun\n, \ndemo\n, \ninfo\n and much more.\n\n\nTry the \nbp demo\n command now!  Type:\n\n\n$ bp demo\n\n\n\n\nThis runs the \ndemo\n command, which runs a demonstration BiblioPixel animation\nand pops up a web page with a visualization of that animation.\n\n\nTwo ways to interrupt \nbp\n - control-C and \nbp shutdown\n\u00b6\n\n\nBut this seems to run forever!\n\n\nWhile animations can have a specific, fixed length like ten seconds, a lot of\nthem go on indefinitely.  How can you interrupt \nbp\n in the middle of running an\nanimation?\n\n\nOne answer is \"control-C\".  This keystroke interrupts almost any command line\nprogram, not just \nBiblioPixel\n.\n\n\nTo send a control-C, hold down the Control key on your keyboard (often marked\nCTR or CTR) and press the C key  a few times until the program stops running.\n\n\nSometimes you don't have a terminal with the \nbp\n program running the\napplication.  In that case, you can use the command \nbp shutdown\n.  Open a new\nterminalin and type \nbp shutdown\n and it will  shut down the currently running\n\nbp\n application wherever it is on your machine.\n\n\nbp run\n - the most important \nbp\n command.\n\u00b6\n\n\nBy far the most important command is \nbp run\n.  This runs Projects, which is the\nway to make your lights light up!\n\n\n[TODO: they won't have a main BiblioPixel directory!]\nTry it now - go to the main BiblioPixel directory and type\n\nbp run -s projects/01-matrix.json\n\n\nIt's  important that you can just leave it out - you'll get the same result\nwith \nbp -s projects/01-matrix.json",
+            "title": "BiblioPixel Basics"
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/#bibliopixel-basics",
+            "text": "",
+            "title": "BiblioPixel Basics"
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/#what-is-bibliopixel",
+            "text": "In the BiblioPixel Light Programming System, Python command line program named bp  runs a JSON document called a  Project  which contains information about\nyour lighting hardware, how your lights are laid out, and how you want to\nanimate them - as well as a really nice lighting simulator.  Let's go through what all of this means.",
+            "title": "What is BiblioPixel"
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/#json",
+            "text": "JSON is a simple and very popular way to represent structured data in\nhuman-readable and editable text.  Here's \na nice little introduction to JSON, and  here's  the full\nspecification of the format, which isn't very long at all.",
+            "title": "JSON"
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/#the-lighting-simulator-simpixel",
+            "text": "BiblioPixel has a sibling project, SimPixel, which lets you preview your\nlighting animations in any modern browser.  This is extremely convenient as it\nallows you develop and test animations in your browser and then deploy them to\nyour hardware installation when you know they are ready.",
+            "title": "The lighting simulator: SimPixel"
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/#the-command-line",
+            "text": "BiblioPixel does not have a graphical user interface - it is a command line\nprogram where you type commands at the command line in a terminal.  On Linux or MacOS, you need to run a program called Terminal comes with the\ncomputer.  On Windows, it's [TBD].  In the documentation, terminal commands will be shown like this:  $ bp color\nred: (255, 0, 0)  Everything after a  $  means something you type in.   In the above example,\nyou typed  bp color  and the program responded  red: (255, 0, 0) .",
+            "title": "The command line"
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/#the-bp-program",
+            "text": "The  bp  program's full name is \"the BiblioPixel Project runner\".  It is\nautomatically installed when you install  BiblioPixel .   bp  has all sorts\nof  commands , with names like  run ,  demo ,  info  and much more.  Try the  bp demo  command now!  Type:  $ bp demo  This runs the  demo  command, which runs a demonstration BiblioPixel animation\nand pops up a web page with a visualization of that animation.",
+            "title": "The bp program"
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/#two-ways-to-interrupt-bp-control-c-and-bp-shutdown",
+            "text": "But this seems to run forever!  While animations can have a specific, fixed length like ten seconds, a lot of\nthem go on indefinitely.  How can you interrupt  bp  in the middle of running an\nanimation?  One answer is \"control-C\".  This keystroke interrupts almost any command line\nprogram, not just  BiblioPixel .  To send a control-C, hold down the Control key on your keyboard (often marked\nCTR or CTR) and press the C key  a few times until the program stops running.  Sometimes you don't have a terminal with the  bp  program running the\napplication.  In that case, you can use the command  bp shutdown .  Open a new\nterminalin and type  bp shutdown  and it will  shut down the currently running bp  application wherever it is on your machine.",
+            "title": "Two ways to interrupt bp - control-C and bp shutdown"
+        },
+        {
+            "location": "/overview/BiblioPixel-Basics/#bp-run-the-most-important-bp-command",
+            "text": "By far the most important command is  bp run .  This runs Projects, which is the\nway to make your lights light up!  [TODO: they won't have a main BiblioPixel directory!]\nTry it now - go to the main BiblioPixel directory and type bp run -s projects/01-matrix.json  It's  important that you can just leave it out - you'll get the same result\nwith  bp -s projects/01-matrix.json",
+            "title": "bp run - the most important bp command."
+        },
+        {
+            "location": "/overview/How-To-Install-BiblioPixel/",
+            "text": "How To Install BiblioPixel\n\u00b6",
+            "title": "How To Install BiblioPixel"
+        },
+        {
+            "location": "/overview/How-To-Install-BiblioPixel/#how-to-install-bibliopixel",
+            "text": "",
+            "title": "How To Install BiblioPixel"
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/",
+            "text": "How to write a BiblioPixel Project\n\u00b6\n\n\nA BiblioPixel project is a text file that describes the different parts of a\nBiblioPixel Lighting System project in a form that humans can easily read,\nunderstand and edit.\n\n\nProjects are text files written in either \nYAML\n or \nJSON\n\u00b6\n\n\nBiblioPixel projects are data files, written in one of two human-readable\nformats, YAML or in JSON.\n\n\nIn this document, we use YAML for most of the examples.\n\n\nExamples:\n\u00b6\n\n\nExample 1:\n a very simple project file written in YAML\n\n\n    shape: 50\n    animation: BiblioPixelAnimations.strip.Wave\n\n\n\n\nExample 2:\n a slightly larger project file, written in JSON\n\n\n    {\n        \"shape\": [32, 32]\n\n        \"run\": {\n            \"fps\": 60\n        },\n\n        \"animation\": {\n            \"typename\": \"BiblioPixelAnimations.matrix.ImageAnim\",\n            \"imagePath\": \"/Users/tom/Documents/giphy-zoom.gif\"\n        }\n    }\n\n\n\n\nExample 3:\n the same project file, written in YAML\n\n\n    shape: [32, 32]\n\n    run:\n      fps: 60\n\n    animation:\n      typename: BiblioPixelAnimations.matrix.ImageAnim\n      imagePath: /Users/tom/Documents/giphy-zoom.gif\n\n\n\n\nA project file is made up of \nsections\n, which have \nfields\n.\n\u00b6\n\n\nIn the project files above, there are three sections - \nshape\n, \nrun\n,\nand \nanimation\n.  Sections can have fields - for example, the \nrun\n section\nabove has the field \nfps: 60\n.\n\n\nProject files have nine sections, many of them optional.  The most important\nsections are \nanimation\n, \nshape\n, and \ndriver\n, which appear in almost every\nproject:\n\n\n\n\nanimation\n describes how your lights are animated\n\n\nshape\n shows how your lights are laid out in 1, 2, or 3 dimensions\n\n\ndriver\n configures the hardware driver that controls the actual lights\n\n\n\n\nClass sections\n are Python objects.  There are four class sections:\n\nanimation\n, \ncontrols\n, \ndrivers\n and \nlayout\n.\n\n\nEach class section has a special \ntypename\n which defines what the Python object\nin that section does, and which fields can be set on it.  Typenames let you\nload not just BiblioPixel code, but your own code\n\n\nNearly all the excitement in BiblioPixel is in the class sections!  BiblioPixel\ncomes with a large number of predefined Animations, Controls, Drivers and\nLayouts, and you can put them together and customize them simply by writing a\nProject, without any programming.\n\n\nMore, if you know a little Python you can extend them or modify a copy, or just\nwrite your own from scratch.\n\n\nValue sections\n contain simple things like strings, numbers, lists, or\ndictionaries.  The five value sections are \naliases\n, \nnumbers\n, \npath\n, \nrun\n,\nand \nshape\n.\n\n\nFields\n\u00b6\n\n\nEach section has a list of \nfields\n - values that you can set.\n\n\nIn Example 2 and 3 above, the \nrun\n section has the field \nfps\n with value\n\n60\n (fps meaning \"frames per second\"), and the \nanimation\n section has the\nfield \nimagePath\n with value \n/Users/tom/Documents/giphy-zoom.gif\n.\n\n\nA value section always has the same fields - for example, the \nrun\n section\nalways has the \nfps\n field in any project.\n\n\nEach class section has a special field named \ntypename\n which is the name\nof its Python class.\n\n\nAnd then each class section has \ndifferent\n fields depending on that\ntypename.\n\n\nFor example, many animations have no fields at all and do exactly one thing.\n\n\nAn example is the animation with the typename \n.tests.StripChannelTest\n.\n\n\nExample 4\n:  An animation that runs a simple test on a strip of 10 pixels\n\n\n    shape: 10\n    animation:\n      typename: .tests.StripChannelTest\n\n\n\n\nOn the other hand, the \nsequence\n animation requires a field \nanimations\n,\na list of animations that are played in sequence.  It also has an optional\nfield \nlength\n which sets the length of each subsequence.\n\n\nExample 5\n:  This animation runs four animations, each for two seconds, in a\n  loop, and displays the result on a 32x32 pixel display.\n\n\n    shape: [32, 32]\n\n    animation:\n        typename: .sequence\n        length: 2\n        animations:\n            - BiblioPixelAnimations.matrix.ImageAnim\n            - BiblioPixelAnimations.matrix.ImageShow\n            - BiblioPixelAnimations.matrix.ImageDissolve\n            - BiblioPixelAnimations.matrix.ScreenGrab\n\n\n\n\nA summary of the sections\n\u00b6\n\n\nClass sections\n\u00b6\n\n\n\n\ndriver\n: The output driver for the hardware or simulator\n\n\ndrivers\n: Used if there's more than one driver.  If the \ndrivers\n section is\n  non-empty, the \ndriver\n section becomes a template for \ndrivers\n.\n\n\nlayout\n: How the lights are laid out geometrically.\n\n\nanimation\n: The class that actually animates the lights.\n\n\ncontrols\n: Classes that use external input to control parts of\n  the project.\n\n\n\n\nValue sections\n\u00b6\n\n\n\n\naliases\n: Aliases are a shorthand to save typing.\n\n\nnumbers\n: Select between plain old Python lists and faster, more powerful\nnumpy lists.\n\n\npath\n: \npath\n is added to the \nPYTHONPATH\n to allow loading of custom\n  libraries.\n\n\nrun\n: \nrun\n controls how the topmost animation is executed - how fast it\n  runs, for how lon or for how many times, etc.\n\n\nshape\n: The shape of the layout - \nlength\n for strips, \n[width, height]\n for\nmatrices and \n[x, y, z]\n for cubes.",
+            "title": "How to write a BiblioPixel Project"
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/#how-to-write-a-bibliopixel-project",
+            "text": "A BiblioPixel project is a text file that describes the different parts of a\nBiblioPixel Lighting System project in a form that humans can easily read,\nunderstand and edit.",
+            "title": "How to write a BiblioPixel Project"
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/#projects-are-text-files-written-in-either-yaml-or-json",
+            "text": "BiblioPixel projects are data files, written in one of two human-readable\nformats, YAML or in JSON.  In this document, we use YAML for most of the examples.",
+            "title": "Projects are text files written in either YAML or JSON"
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/#examples",
+            "text": "Example 1:  a very simple project file written in YAML      shape: 50\n    animation: BiblioPixelAnimations.strip.Wave  Example 2:  a slightly larger project file, written in JSON      {\n        \"shape\": [32, 32]\n\n        \"run\": {\n            \"fps\": 60\n        },\n\n        \"animation\": {\n            \"typename\": \"BiblioPixelAnimations.matrix.ImageAnim\",\n            \"imagePath\": \"/Users/tom/Documents/giphy-zoom.gif\"\n        }\n    }  Example 3:  the same project file, written in YAML      shape: [32, 32]\n\n    run:\n      fps: 60\n\n    animation:\n      typename: BiblioPixelAnimations.matrix.ImageAnim\n      imagePath: /Users/tom/Documents/giphy-zoom.gif",
+            "title": "Examples:"
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/#a-project-file-is-made-up-of-sections-which-have-fields",
+            "text": "In the project files above, there are three sections -  shape ,  run ,\nand  animation .  Sections can have fields - for example, the  run  section\nabove has the field  fps: 60 .  Project files have nine sections, many of them optional.  The most important\nsections are  animation ,  shape , and  driver , which appear in almost every\nproject:   animation  describes how your lights are animated  shape  shows how your lights are laid out in 1, 2, or 3 dimensions  driver  configures the hardware driver that controls the actual lights   Class sections  are Python objects.  There are four class sections: animation ,  controls ,  drivers  and  layout .  Each class section has a special  typename  which defines what the Python object\nin that section does, and which fields can be set on it.  Typenames let you\nload not just BiblioPixel code, but your own code  Nearly all the excitement in BiblioPixel is in the class sections!  BiblioPixel\ncomes with a large number of predefined Animations, Controls, Drivers and\nLayouts, and you can put them together and customize them simply by writing a\nProject, without any programming.  More, if you know a little Python you can extend them or modify a copy, or just\nwrite your own from scratch.  Value sections  contain simple things like strings, numbers, lists, or\ndictionaries.  The five value sections are  aliases ,  numbers ,  path ,  run ,\nand  shape .",
+            "title": "A project file is made up of sections, which have fields."
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/#fields",
+            "text": "Each section has a list of  fields  - values that you can set.  In Example 2 and 3 above, the  run  section has the field  fps  with value 60  (fps meaning \"frames per second\"), and the  animation  section has the\nfield  imagePath  with value  /Users/tom/Documents/giphy-zoom.gif .  A value section always has the same fields - for example, the  run  section\nalways has the  fps  field in any project.  Each class section has a special field named  typename  which is the name\nof its Python class.  And then each class section has  different  fields depending on that\ntypename.  For example, many animations have no fields at all and do exactly one thing.  An example is the animation with the typename  .tests.StripChannelTest .  Example 4 :  An animation that runs a simple test on a strip of 10 pixels      shape: 10\n    animation:\n      typename: .tests.StripChannelTest  On the other hand, the  sequence  animation requires a field  animations ,\na list of animations that are played in sequence.  It also has an optional\nfield  length  which sets the length of each subsequence.  Example 5 :  This animation runs four animations, each for two seconds, in a\n  loop, and displays the result on a 32x32 pixel display.      shape: [32, 32]\n\n    animation:\n        typename: .sequence\n        length: 2\n        animations:\n            - BiblioPixelAnimations.matrix.ImageAnim\n            - BiblioPixelAnimations.matrix.ImageShow\n            - BiblioPixelAnimations.matrix.ImageDissolve\n            - BiblioPixelAnimations.matrix.ScreenGrab",
+            "title": "Fields"
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/#a-summary-of-the-sections",
+            "text": "",
+            "title": "A summary of the sections"
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/#class-sections",
+            "text": "driver : The output driver for the hardware or simulator  drivers : Used if there's more than one driver.  If the  drivers  section is\n  non-empty, the  driver  section becomes a template for  drivers .  layout : How the lights are laid out geometrically.  animation : The class that actually animates the lights.  controls : Classes that use external input to control parts of\n  the project.",
+            "title": "Class sections"
+        },
+        {
+            "location": "/overview/How-to-write-a-Project/#value-sections",
+            "text": "aliases : Aliases are a shorthand to save typing.  numbers : Select between plain old Python lists and faster, more powerful\nnumpy lists.  path :  path  is added to the  PYTHONPATH  to allow loading of custom\n  libraries.  run :  run  controls how the topmost animation is executed - how fast it\n  runs, for how lon or for how many times, etc.  shape : The shape of the layout -  length  for strips,  [width, height]  for\nmatrices and  [x, y, z]  for cubes.",
+            "title": "Value sections"
+        },
+        {
+            "location": "/overview/Immediate-Gratification/",
+            "text": "Immediate gratification: flashing lights from one command line.\n\u00b6\n\n\nIf you have Python 3 installed:\n\n\nsudo pip3 install bibliopixel && bp demo\n\n\nIf you are using a\n\nvirtualenv\n,\nwhich is recommended but not required for this and most Python projects,\nyou can just type:\n\n\npip3 install bibliopixel && bp demo\n\n\nIf you don't know if you have Python 3 installed, type \npython3 --version\n and\nif that works, you're good to go\n\n\nOtherwise, download and install Python3 from here:\n\n\nhttps://www.python.org/downloads/",
+            "title": "Immediate gratification: flashing lights from one command line."
+        },
+        {
+            "location": "/overview/Immediate-Gratification/#immediate-gratification-flashing-lights-from-one-command-line",
+            "text": "If you have Python 3 installed:  sudo pip3 install bibliopixel && bp demo  If you are using a virtualenv ,\nwhich is recommended but not required for this and most Python projects,\nyou can just type:  pip3 install bibliopixel && bp demo  If you don't know if you have Python 3 installed, type  python3 --version  and\nif that works, you're good to go  Otherwise, download and install Python3 from here:  https://www.python.org/downloads/",
+            "title": "Immediate gratification: flashing lights from one command line."
+        },
+        {
+            "location": "/overview/The-animation-section/",
+            "text": "The \nanimation\n section\n\u00b6\n\n\nBiblioPixel comes with a library of animations called BiblioPixelAnimations\nwhich you can reuse without programming.\n\n\nIf you can program, writing animations is quite easy and often the best way to\nsolve your problem - there are more types of animation than all the other class\ntypes put together.\n\n\nThe \nanimation\n section works together with the \nrun\n section to describe all\ntiming.\n\n\nThe \nanimation\n section determines how the light colors change over time, while\nthe \nrun\n section describes more general information - like the frame rate (in\nframes per second or fps), or how many times the animation is repeated.\n\n\nEach \nanimation\n section is different.\n\u00b6\n\n\nThe fields in the section depend entirely on the type \nanimation\n itself.\nEach type of animation has a documentation page - check that for erxamples.\n\n\nExamples:\n\n\n\n\n\n\nDisplay a single animation with no fields\n\n\nanimation: BiblioPixelAnimations.matrix.bloom\n\n\n\n\n\n\nAn animation with fields \nscroll\n, \ncolor\n and \nbgcolor\n\n\n\n\n\n\n    animation:\n      typename: BiblioPixelAnimations.matrix.Mainframe\n      scroll: false\n      color: green\n      bgcolor: dark gray\n\n\n\n\nMix four animations together\n\n\n    animation:\n\n        typename: mixer\n        levels: [0.25, 0.25, 0.25, 0.25]\n        animations:\n            - BiblioPixelAnimations.matrix.ImageAnim\n            - BiblioPixelAnimations.matrix.ImageShow\n            - BiblioPixelAnimations.matrix.ImageDissolve\n            - BiblioPixelAnimations.matrix.ScreenGrab",
+            "title": "The `animation` section"
+        },
+        {
+            "location": "/overview/The-animation-section/#the-animation-section",
+            "text": "BiblioPixel comes with a library of animations called BiblioPixelAnimations\nwhich you can reuse without programming.  If you can program, writing animations is quite easy and often the best way to\nsolve your problem - there are more types of animation than all the other class\ntypes put together.  The  animation  section works together with the  run  section to describe all\ntiming.  The  animation  section determines how the light colors change over time, while\nthe  run  section describes more general information - like the frame rate (in\nframes per second or fps), or how many times the animation is repeated.",
+            "title": "The animation section"
+        },
+        {
+            "location": "/overview/The-animation-section/#each-animation-section-is-different",
+            "text": "The fields in the section depend entirely on the type  animation  itself.\nEach type of animation has a documentation page - check that for erxamples.  Examples:    Display a single animation with no fields  animation: BiblioPixelAnimations.matrix.bloom    An animation with fields  scroll ,  color  and  bgcolor        animation:\n      typename: BiblioPixelAnimations.matrix.Mainframe\n      scroll: false\n      color: green\n      bgcolor: dark gray  Mix four animations together      animation:\n\n        typename: mixer\n        levels: [0.25, 0.25, 0.25, 0.25]\n        animations:\n            - BiblioPixelAnimations.matrix.ImageAnim\n            - BiblioPixelAnimations.matrix.ImageShow\n            - BiblioPixelAnimations.matrix.ImageDissolve\n            - BiblioPixelAnimations.matrix.ScreenGrab",
+            "title": "Each animation section is different."
+        },
+        {
+            "location": "/overview/The-run-section/",
+            "text": "The \nrun\n section\n\u00b6\n\n\nrun\n is a value section with nine optional fields:\n\n\n\n\namt\n (default \n1\n): Frame interval - the number of frames between individual\n  updates\n\n\nfps\n (default \n0\n): Number of frames per second to display\n\n\nmain\n (default \nNone\n): If non-empty, then \nbp\n runs in a background thread,\n  and the function named here runs in the foreground\n\n\nmax_cycles\n (default \n0\n):  Maximum number of cycles - full repeats of the\n  animation - to play back, if set.\n\n\nmax_steps\n (default \n0\n): Maximum number of animation steps to play, if set.\n\n\nseconds\n (default \nNone,\n): Maximum number of seconds to play, if set.\n\n\nsleep_time\n (default \n0\n): Time to sleep between frames, in seconds.\n\n\nthreaded\n (default \nFalse\n): If True, the animation runs in a separate thread.\n\n\nuntil_complete\n (default \nFalse\n): If True, run the animation exactly once.\n\n\n\n\nExamples\n\u00b6\n\n\n\n\nRun forever at 30 frames per second (fps)\n\n\n\n\n    run:\n    fps: 30\n\n\n\n\n\n\nRun for two seconds at 10 fps\n\n\n\n\n    run:\n      seconds: 2\n      fps: 10\n\n\n\n\n\n\nRun three times\n\n\n\n\n    run:\n      max_cycles: 3",
+            "title": "The `run` section"
+        },
+        {
+            "location": "/overview/The-run-section/#the-run-section",
+            "text": "run  is a value section with nine optional fields:   amt  (default  1 ): Frame interval - the number of frames between individual\n  updates  fps  (default  0 ): Number of frames per second to display  main  (default  None ): If non-empty, then  bp  runs in a background thread,\n  and the function named here runs in the foreground  max_cycles  (default  0 ):  Maximum number of cycles - full repeats of the\n  animation - to play back, if set.  max_steps  (default  0 ): Maximum number of animation steps to play, if set.  seconds  (default  None, ): Maximum number of seconds to play, if set.  sleep_time  (default  0 ): Time to sleep between frames, in seconds.  threaded  (default  False ): If True, the animation runs in a separate thread.  until_complete  (default  False ): If True, run the animation exactly once.",
+            "title": "The run section"
+        },
+        {
+            "location": "/overview/The-run-section/#examples",
+            "text": "Run forever at 30 frames per second (fps)       run:\n    fps: 30   Run for two seconds at 10 fps       run:\n      seconds: 2\n      fps: 10   Run three times       run:\n      max_cycles: 3",
+            "title": "Examples"
+        },
+        {
+            "location": "/overview/The-shape-and-layout-sections/",
+            "text": "The \nshape\n and \nlayout\n sections.\n\u00b6\n\n\nshape\n\u00b6\n\n\nshape\n specifies how many lights there are and how they are arranged.\n\n\nIf the lights are in a linear strip, \nshape\n is a single number:\n\n\nshape: 100\n\n\n\n\n\nwhich means a strip of 100 lights.\n\n\nIf the lights are in a matrix, then \nshape\n is a width, height pair:\n\n\nshape: [32, 16]\n\n\n\n\n\nwhich means a matrix that is 32 pixels wide and 16 pixels tall.\n\n\nIf the lights are in a cube, then \nshape\n is an x, y, z triple:\n\n\nshape: [2, 4, 8]\n\n\n\n\n\nwhich means a cube that is 2 pixels wide, 4 pixels deep and 8 pixels high.\n\n\nThe \nlayout\n section\n\u00b6\n\n\nThe \nshape\n section is good enough for a lot of simple layouts but\nmore complex layouts to be specified will need the \nlayout\n section.\n\n\nWe have the following layout classes: [TODO: link to the autogenerated docs here]\n\n\n\n\nstrip\n\n\nmatrix\n\n\ncube\n\n\ncircle",
+            "title": "The `shape` and `layout` sections."
+        },
+        {
+            "location": "/overview/The-shape-and-layout-sections/#the-shape-and-layout-sections",
+            "text": "",
+            "title": "The shape and layout sections."
+        },
+        {
+            "location": "/overview/The-shape-and-layout-sections/#shape",
+            "text": "shape  specifies how many lights there are and how they are arranged.  If the lights are in a linear strip,  shape  is a single number:  shape: 100  which means a strip of 100 lights.  If the lights are in a matrix, then  shape  is a width, height pair:  shape: [32, 16]  which means a matrix that is 32 pixels wide and 16 pixels tall.  If the lights are in a cube, then  shape  is an x, y, z triple:  shape: [2, 4, 8]  which means a cube that is 2 pixels wide, 4 pixels deep and 8 pixels high.",
+            "title": "shape"
+        },
+        {
+            "location": "/overview/The-shape-and-layout-sections/#the-layout-section",
+            "text": "The  shape  section is good enough for a lot of simple layouts but\nmore complex layouts to be specified will need the  layout  section.  We have the following layout classes: [TODO: link to the autogenerated docs here]   strip  matrix  cube  circle",
+            "title": "The layout section"
+        },
+        {
+            "location": "/overview/Typenames-path-and-aliases/",
+            "text": "Typenames, and the \npath\n and \nalias\n sections.\n\u00b6\n\n\nA class section (\nanimation\n, \ncontrols\n, \ndrivers\n, or \nlayout\n) has the name\nof its Python class in the field \ntypename\n.\n\n\nExample 1\n:  Simple animation\n\n\n    animation:\n      typename: .tests.StripChannelTest\n\n\n\n\nFor convenience, if the whole class section is a string, it's the \ntypename\n:\n\n\nExample 2\n:  Same animation as in Example 1\n\n\n    animation: .tests.StripChannelTest",
+            "title": "Typenames, and the `path` and `alias` sections."
+        },
+        {
+            "location": "/overview/Typenames-path-and-aliases/#typenames-and-the-path-and-alias-sections",
+            "text": "A class section ( animation ,  controls ,  drivers , or  layout ) has the name\nof its Python class in the field  typename .  Example 1 :  Simple animation      animation:\n      typename: .tests.StripChannelTest  For convenience, if the whole class section is a string, it's the  typename :  Example 2 :  Same animation as in Example 1      animation: .tests.StripChannelTest",
+            "title": "Typenames, and the path and alias sections."
+        },
+        {
+            "location": "/reference/Glossary/",
+            "text": "Glossary\n\u00b6",
+            "title": "Glossary"
+        },
+        {
+            "location": "/reference/Glossary/#glossary",
+            "text": "",
+            "title": "Glossary"
+        },
+        {
+            "location": "/topic-papers/Troubleshooting-biblipixel/",
+            "text": "Troubleshooting BiblioPixel, \nbp\n and the AllPixel\n\u00b6",
+            "title": "Troubleshooting BiblioPixel, `bp` and the AllPixel"
+        },
+        {
+            "location": "/topic-papers/Troubleshooting-biblipixel/#troubleshooting-bibliopixel-bp-and-the-allpixel",
+            "text": "",
+            "title": "Troubleshooting BiblioPixel, bp and the AllPixel"
+        },
+        {
+            "location": "/topic-papers/Using-bp/",
+            "text": "Using the \nbp\n command line program\n\u00b6",
+            "title": "Using the `bp` command line program"
+        },
+        {
+            "location": "/topic-papers/Using-bp/#using-the-bp-command-line-program",
+            "text": "",
+            "title": "Using the bp command line program"
+        },
+        {
+            "location": "/topic-papers/Using-controls/",
+            "text": "",
+            "title": "Using controls"
+        },
+        {
+            "location": "/topic-papers/Using-numpy/",
+            "text": "Using \nnumpy\n color lists\n\u00b6\n\n\nIntroduction\n\u00b6\n\n\nAll BLiPS animation is accomplished by changing a \ncolor list\n - a list of RGB\ncolors.\n\n\nIn all BLiPS versions up until and including v3, a color list was a Python list\nof Python tuples.\n\n\nWe call this \"classic Python lists\". This was very convenient and easy to\nunderstand - but classic lists are slow and uses a lot of memory if there are a\nlot of colors, and even quite simple operations on classic lists require\nmany lines of code.\n\n\nEnter \nnumpy\n!\n\n\nnumpy\n is a Python package that has purely numeric\narrays (lists and matrices) that use less memory and are a lot faster - but even\nbetter, \nnumpy\n also lets you express even quite complex numeric operations with\na smaller amount of clearer code than using classic lists.\n\n\nSince BLiPS version 3.4.0, animations can use \nnumpy\n arrays by setting the\nProject section \n\"numbers\"\n to be \n\"float32\"\n.\n\n\nStarting in BLiPS 4.0, \nnumpy\n arrays will be the default, and fairly soon after\nthat, we'll be phasing out classic lists.\n\n\nWhat's a \nnumpy\n color list like?\n\u00b6\n\n\nWhether it's \nnumpy\n or \"classic\", a color list is just a list of RGB colors.\n\n\nAlmost all operations that work on a classic list work the same way on a \nnumpy\n\nlist: for example:\n\n\n    from bibliopixel.project.data_maker import ColorList, NumpyColorList\n    from bibliopixel.util.colors import COLORS\n\n    classic_list = ColorList(4)\n    numpy_list = NumpyColorList(4)\n\n    classic[0] = COLORS.yellow\n    classic[1:4] = COLORS.red, COLORS.green, COLORS.blue\n\n    numpy_list[0] = COLORS.yellow\n    numpy_list[1:4] = COLORS.red, COLORS.green, COLORS.blue\n\n\n\n\nsets the first four colors of a color list to yellow, red, green and blue.\n\n\nUnlike classic lists, you can write over components in a color_list:\n\n\n    numpy_list[0][0] = 0\n    # classic_list[0][0] = 0    # Can't modify a tuple!  throws a TypeError.\n\n\n\n\nWhere \nnumpy\n disinguishes itself is operations that apply to all the colors at\nonce.  To reduce the intensity of each color just created by 50%:\n\n\n    for i, (r, g, b) in enumerate(classic):\n        classic[i] = (r / 2, g / 2, b / 2)\n\n     # Much easier:\n     numpy_list /= 2\n\n\n\n\nIt works even better if you have multiple lists - you can do slick things like:\n\nnumpy_list = (2 * list_1 + 3 * list_2) ** 2.5\n\n\nBe careful:  references can be tricky\n\u00b6\n\n\nUnlike classic lists, if you extract a color from a \nnumpy\n color list and then\nmodify it, the original list is also changed!\n\n\n    numpy_list[:] = COLORS.red, COLORS.green, COLORS.blue\n\n    color = numpy_list[0]\n\n    # later\n    color[0] = 0\n\n    numpy_list[0]  # Now it's black!\n\n\n\n\nHow to get your BiblioPixel Animation to use \nnumpy\n lists.\n\u00b6\n\n\nYou won't need to change anything in your Project at all, but if you have\nwritten a custom Animation, you might need to change your code.\n\n\nIn our experience so far, 95% of existing Animations worked immediately with\n\nnumpy\n and all the rest required only tiny changes.\n\n\nYou can easily find out - just run your project with the command line float\n\n--numbers=float\n like this:\n\n\n    bp --numbers=float your-project-name.json\n\n\n\n\nIf there's an error, contact us at\n\nManiacal Labs Users\n\nand send us the code for your Animation and the error!",
+            "title": "Using `numpy` color lists"
+        },
+        {
+            "location": "/topic-papers/Using-numpy/#using-numpy-color-lists",
+            "text": "",
+            "title": "Using numpy color lists"
+        },
+        {
+            "location": "/topic-papers/Using-numpy/#introduction",
+            "text": "All BLiPS animation is accomplished by changing a  color list  - a list of RGB\ncolors.  In all BLiPS versions up until and including v3, a color list was a Python list\nof Python tuples.  We call this \"classic Python lists\". This was very convenient and easy to\nunderstand - but classic lists are slow and uses a lot of memory if there are a\nlot of colors, and even quite simple operations on classic lists require\nmany lines of code.  Enter  numpy !  numpy  is a Python package that has purely numeric\narrays (lists and matrices) that use less memory and are a lot faster - but even\nbetter,  numpy  also lets you express even quite complex numeric operations with\na smaller amount of clearer code than using classic lists.  Since BLiPS version 3.4.0, animations can use  numpy  arrays by setting the\nProject section  \"numbers\"  to be  \"float32\" .  Starting in BLiPS 4.0,  numpy  arrays will be the default, and fairly soon after\nthat, we'll be phasing out classic lists.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/topic-papers/Using-numpy/#whats-a-numpy-color-list-like",
+            "text": "Whether it's  numpy  or \"classic\", a color list is just a list of RGB colors.  Almost all operations that work on a classic list work the same way on a  numpy \nlist: for example:      from bibliopixel.project.data_maker import ColorList, NumpyColorList\n    from bibliopixel.util.colors import COLORS\n\n    classic_list = ColorList(4)\n    numpy_list = NumpyColorList(4)\n\n    classic[0] = COLORS.yellow\n    classic[1:4] = COLORS.red, COLORS.green, COLORS.blue\n\n    numpy_list[0] = COLORS.yellow\n    numpy_list[1:4] = COLORS.red, COLORS.green, COLORS.blue  sets the first four colors of a color list to yellow, red, green and blue.  Unlike classic lists, you can write over components in a color_list:      numpy_list[0][0] = 0\n    # classic_list[0][0] = 0    # Can't modify a tuple!  throws a TypeError.  Where  numpy  disinguishes itself is operations that apply to all the colors at\nonce.  To reduce the intensity of each color just created by 50%:      for i, (r, g, b) in enumerate(classic):\n        classic[i] = (r / 2, g / 2, b / 2)\n\n     # Much easier:\n     numpy_list /= 2  It works even better if you have multiple lists - you can do slick things like: numpy_list = (2 * list_1 + 3 * list_2) ** 2.5",
+            "title": "What's a numpy color list like?"
+        },
+        {
+            "location": "/topic-papers/Using-numpy/#be-careful-references-can-be-tricky",
+            "text": "Unlike classic lists, if you extract a color from a  numpy  color list and then\nmodify it, the original list is also changed!      numpy_list[:] = COLORS.red, COLORS.green, COLORS.blue\n\n    color = numpy_list[0]\n\n    # later\n    color[0] = 0\n\n    numpy_list[0]  # Now it's black!",
+            "title": "Be careful:  references can be tricky"
+        },
+        {
+            "location": "/topic-papers/Using-numpy/#how-to-get-your-bibliopixel-animation-to-use-numpy-lists",
+            "text": "You won't need to change anything in your Project at all, but if you have\nwritten a custom Animation, you might need to change your code.  In our experience so far, 95% of existing Animations worked immediately with numpy  and all the rest required only tiny changes.  You can easily find out - just run your project with the command line float --numbers=float  like this:      bp --numbers=float your-project-name.json  If there's an error, contact us at Maniacal Labs Users \nand send us the code for your Animation and the error!",
+            "title": "How to get your BiblioPixel Animation to use numpy lists."
+        },
+        {
+            "location": "/topic-papers/Writing-an-Animation-class/",
+            "text": "How to write an \nAnimation\n class for BiblioPixel\n\u00b6",
+            "title": "How to write an `Animation` class for BiblioPixel"
+        },
+        {
+            "location": "/topic-papers/Writing-an-Animation-class/#how-to-write-an-animation-class-for-bibliopixel",
+            "text": "",
+            "title": "How to write an Animation class for BiblioPixel"
+        }
+    ]
+}
